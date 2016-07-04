@@ -36,7 +36,7 @@ public class MainClass {
         Scanner scanner = new Scanner(System.in);
 
         //初始化Selenium Chrome driver所需的系统属性
-        System.setProperty("webdriver.chrome.driver", "D:/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver.exe");
         WebDriver driver;
         WebDriverWait wait;
 
